@@ -26,7 +26,7 @@ public class CustomerTest {
     }
 
     @Test
-    public void canGetOwnedVehicles(){
+    public void getOwnedVehicles(){
         customer.addToOwned(car);
         assertTrue(customer.getOwnedVehicles().contains(car));
     }
