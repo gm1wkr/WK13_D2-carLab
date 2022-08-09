@@ -1,6 +1,9 @@
 
 public abstract class Vehicles {
 
+    String make;
+
+    String model;
     double price;
     String colour;
     int numOfSeats;
@@ -8,7 +11,11 @@ public abstract class Vehicles {
 
     EngineType engine;
 
-    public Vehicles(double price, String colour, int numOfSeats, int numberOfDoors, EngineType engine) {
+
+
+    public Vehicles(String make, String model, double price, String colour, int numOfSeats, int numberOfDoors, EngineType engine) {
+        this.make = make;
+        this.model = model;
         this.price = price;
         this.colour = colour;
         this.numOfSeats = numOfSeats;
@@ -18,6 +25,14 @@ public abstract class Vehicles {
 
     public double getPrice() {
         return price;
+    }
+
+    public String getMake() {
+        return make;
+    }
+
+    public String getModel() {
+        return model;
     }
 
     public String getColour() {

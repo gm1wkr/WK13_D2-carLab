@@ -20,8 +20,15 @@ public class Dealership {
     public double getTill() {
         return till;
     }
+    public void addToTill(double amountToAdd) {
+        this.till = this.till + amountToAdd;
+    }
+    public void removeFromTill(double amountToRemove) {
+        this.till -= amountToRemove;
+    }
 
     public ArrayList<Vehicles> getOwnedVehicles() {
         return ownedVehicles;
     }
+
 }

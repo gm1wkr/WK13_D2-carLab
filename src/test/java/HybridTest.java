@@ -9,7 +9,7 @@ public class HybridTest {
 
     @Before
     public void before(){
-        hybrid = new HybridCar(15000.00, "Green", 2, 2, EngineType.HYBRID, ChargeType.SELF_CHARGING);
+        hybrid = new HybridCar("Konn","Fuse", 15000.00, "Green", 2, 2, EngineType.HYBRID, ChargeType.SELF_CHARGING);
     }
 
     @Test

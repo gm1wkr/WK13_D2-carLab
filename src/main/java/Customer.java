@@ -30,4 +30,16 @@ public class Customer{
     public int numberOfCarsOwned() {
         return this.ownedVehicles.size();
     }
+
+    private boolean canPay(double amountToPay) {
+        return this.getMoney() >= amountToPay;
+    }
+
+    public boolean payMoney(double amountToPay){
+        if(this.canPay(amountToPay)){
+           this.setMoney(getMoney() - amountToPay);
+           return true;
+        }
+        return false;
+    }
 }

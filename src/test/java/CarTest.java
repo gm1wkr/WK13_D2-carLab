@@ -9,7 +9,7 @@ public class CarTest {
 
     @Before
     public void before(){
-        car = new Car(1000.00, "Pink", 4, 4, EngineType.PETROL, 300);
+        car = new Car("Sword", "Diesta",1000.00, "Pink", 4, 4, EngineType.PETROL, 300);
     }
 
     @Test

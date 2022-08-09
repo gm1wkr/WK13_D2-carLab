@@ -9,7 +9,7 @@ public class ElectricCarTest {
 
     @Before
     public void before(){
-        electricCar = new ElectricCar(5000.00, "blue", 4, 2, EngineType.ELECTRIC, ChargeType.RAPID);
+        electricCar = new ElectricCar("Static", "Charge", 5000.00, "blue", 4, 2, EngineType.ELECTRIC, ChargeType.RAPID);
     }
 
     @Test
