@@ -6,4 +6,8 @@ public class HybridCar extends Vehicles {
         super(price, colour, numOfSeats, numberOfDoors, engine);
         this.chargeType = chargeType;
     }
+
+    public ChargeType getChargeType() {
+        return chargeType;
+    }
 }

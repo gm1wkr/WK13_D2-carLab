@@ -39,6 +39,11 @@ public class HybridTest {
 
     @Test
     public void getChargeType(){
-        assertEquals(ChargeType.SELF_CHARGING, hybrid.g);
+        assertEquals(ChargeType.SELF_CHARGING, hybrid.getChargeType());
+    }
+
+    @Test
+    public void getChargingTime() {
+        assertEquals(0, hybrid.chargeType.getChargingTime());
     }
 }
