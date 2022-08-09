@@ -24,6 +24,26 @@ public class ElectricCarTest {
 
     @Test
     public void hasSeats() {
-        assertEquals(4, electricCar.getNumOfSeats())
+        assertEquals(4, electricCar.getNumOfSeats());
+    }
+
+    @Test
+    public void hasDoors() {
+        assertEquals(2, electricCar.getNumberOfDoors());
+    }
+
+    @Test
+    public void canGetEngineType() {
+        assertEquals(EngineType.ELECTRIC, electricCar.getEngine());
+    }
+
+    @Test
+    public void canGetChargeType() {
+        assertEquals(ChargeType.RAPID, electricCar.getChargeType());
+    }
+
+    @Test
+    public void canGetChargingTime() {
+        assertEquals(2, electricCar.chargeType.getChargingTime());
     }
 }
