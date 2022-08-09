@@ -31,7 +31,7 @@ public class DealershipTest {
     @Test
     public void canGetOwnedVehicles(){
         dealer.addToOwned(electricCar);
-        assertTrue(dealer.getOwnedVehicles.contains(electricCar));
+        assertTrue(dealer.getOwnedVehicles().contains(electricCar));
     }
 
 }
